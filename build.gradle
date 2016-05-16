@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+repositories {
+    mavenCentral()
+
+}
+
+dependencies {
+
+    compile group: 'com.yammer.dropwizard', name: 'dropwizard-core', version: '0.6.2'
+    compile ('org.json:json:20160212')
+}
+
+mainClassName = 'com.GeocodeService'
+
+run {  args 'server', './src/main/resources/geocode-service.yml' }

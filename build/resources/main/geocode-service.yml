@@ -1,0 +1,2 @@
+arcgisURL: http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/find?text=
+googleURL: http://maps.googleapis.com/maps/api/geocode/json?address=
